@@ -1,12 +1,12 @@
 # OfficeDeploy
 
-Automatizacion de Microsoft Office para Tactical RMM.
+Automatizacion de Microsoft Office por Powershell.
 
 Este repositorio permite desinstalar versiones antiguas, MSI, Click-to-Run y Office dañado, y luego instalar Microsoft 365 Apps de forma silenciosa.
 
 ## Desinstalar Office
 
-Ejecutar en PowerShell como administrador o desde Tactical RMM:
+Ejecutar en PowerShell como administrador:
 
     $P="$env:TEMP\uninstall-office.ps1";Invoke-WebRequest "https://raw.githubusercontent.com/alamaxjashek/OfficeDeploy/main/uninstall-office.ps1" -OutFile $P;powershell.exe -NoProfile -ExecutionPolicy Bypass -File $P
 
@@ -23,7 +23,7 @@ El desinstalador:
 
 ## Instalar Microsoft 365
 
-Ejecutar en PowerShell como administrador o desde Tactical RMM:
+Ejecutar en PowerShell como administrador:
 
     $P="$env:TEMP\install-m365.ps1";Invoke-WebRequest "https://raw.githubusercontent.com/alamaxjashek/OfficeDeploy/main/install-m365.ps1" -OutFile $P;powershell.exe -NoProfile -ExecutionPolicy Bypass -File $P
 
