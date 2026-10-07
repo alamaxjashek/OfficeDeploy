@@ -1,5 +1,1 @@
-﻿<Configuration>
-  <Remove All="TRUE" />
-  <RemoveMSI />
-  <Display Level="None" AcceptEULA="TRUE" />
-</Configuration>
+<Configuration><Remove All="TRUE" /><Display Level="None" AcceptEULA="TRUE" /><Property Name="FORCEAPPSHUTDOWN" Value="TRUE" /></Configuration>
