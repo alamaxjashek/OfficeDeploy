@@ -1,13 +1,1 @@
-﻿# OfficeDeploy
-
-Office Deployment Tool + configuraciones para desinstalar Office e instalar Microsoft 365 Apps for business.
-
-## Desinstalar
-```powershell
-irm https://raw.githubusercontent.com/alamaxjashek/OfficeDeploy/main/uninstall-office.ps1|iex
-```
-
-## Instalar Microsoft 365
-```powershell
-irm https://raw.githubusercontent.com/alamaxjashek/OfficeDeploy/main/install-m365.ps1|iex
-```
+OfficeDeploy - Automatizacion para Tactical RMM. uninstall-office.ps1 elimina Office Click-to-Run con ODT, elimina versiones MSI antiguas y, si Windows Installer devuelve 1603, ejecuta Microsoft GetHelp OfficeScrubScenario automaticamente. Comando RMM: $P="$env:TEMP\uninstall-office.ps1"; Invoke-WebRequest "https://raw.githubusercontent.com/alamaxjashek/OfficeDeploy/main/uninstall-office.ps1" -OutFile $P; powershell.exe -NoProfile -ExecutionPolicy Bypass -File $P
